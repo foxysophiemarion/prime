@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Каталог</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241007164021">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20241007164021" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20241007164021"></script>-->
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div class="top-header__body">
+						<p class="top-header__address">Адрес: Российская Федерация, г. Ижевск, ул. Зои Космодемьянской 15</p>
+						<p class="top-header__hours">Часы работы: пн-пт с 9:00 до 18:00 / сб с 9:00 до 15:00</p>
+					</div>
+					<div class="top-header__phones">
+						<a href="tel:8-982-990-98-98">Отдел продаж: 8-982-990-98-98</a>
+						<a href="tel:8-922-500-02-99">Отдел логистики: 8-922-500-02-99</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__left">
+						<a href="index.html" class="header__logo"><img src="img/logo.webp" alt=""></a>
+						<div class="header__search search-header">
+							<form action="catalog.html" method="GET" class="search-header__body" id="searchForm">
+								<input autocomplete="off" type="text" name="search" data-error="Ошибка" placeholder="Поиск по товарам" class="search-header__input" id="searchInput">
+								<button type="submit" class="search-header__button _icon-search" id="searchButton"></button>
+							</form>
+							<span class="search-header__tippy">Начните вводить тему...</span>
+							<div class="search-header__suggestions" id="suggestions"></div>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="about.html" class="menu__link">О Компании</a></li>
+								<li class="menu__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<button class="spoller-menu__title">Каталог</button>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="insinerator.html" class="spoller-menu__link">Инсинераторы
+													</a></li>
+												<li class="spoller-menu__item"><a href="cremator.html" class="spoller-menu__link">Крематоры</a></li>
+												<li class="spoller-menu__item"><a href="catalog.html" class="spoller-menu__link">Весь
+														каталог</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<button class="spoller-menu__title">Услуги</button>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Подбор и
+														изготовление
+														оборудования
+													</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Обучение
+														и
+														поддержка</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Запуск
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">
+														Обслуживание
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Разработка и аудит
+														технических заданий</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Ремонт
+														инсинераторов
+														и запасные части</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item"><a href="leasing.html" class="menu__link">Лизинг</a></li>
+								<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div data-da=".header__menu,1439" class="header__right">
+						<a href="" class="header__social _icon-whatsapp"></a>
+						<a href="" class="header__social _icon-telegram"></a>
+						<a href="" class="header__social _icon-viber"></a>
+					</div>
+				</div>
+				<div class="header__bottom bottom-header">
+					<a href="tel:+7(3412)47-48-65" class="bottom-header__phone _icon-phone">+7(3412)47-48-65</a>
+					<button data-popup="#form-popup" type="button" class="bottom-header__button button">Заказать звонок</button>
+				</div>
+			</div>
+		</header>
+		<main class="products">
+			<div class="products__top top-products">
+				<div class="top-products__container">
+					<h1 class="top-products__title title">Каталог</h1>
+					<div class="top-products__breadcrumbs breadcrumbs">
+						<a href="index.html" class="breadcrumbs__link">Главная</a>
+						<span>/</span>
+						<p class="breadcrumbs__active">Каталог</p>
+					</div>
+				</div>
+			</div>
+			<section class="products__catalog products-catalog">
+				<div class="products-catalog__container">
+					<div class="products-catalog__body">
+						<div class="products-catalog__item item-catalog">
+							<div id="cremators" class="item-catalog__card">
+								<div class="item-catalog__top">
+									<h5 class="item-catalog__title">Крематоры</h5>
+									<div class="item-catalog__subtitle">2 товара</div>
+									<div class="item-catalog__text">Современные кремационные камеры –
+										инсинераторы – для решения проблемы
+										утилизации нефтешламов, и других
+										видов отходов.</div>
+								</div>
+								<div class="item-catalog__btn">
+									<a href="cremator.html" class="item-catalog__button">Перейти</a>
+								</div>
+								<div class="item-catalog__image">
+									<img src="img/catalog/02.webp" alt="">
+								</div>
+							</div>
+							<div id="incinerators" class="item-catalog__card">
+								<div class="item-catalog__top">
+									<h5 class="item-catalog__title">Инсинераторы</h5>
+									<div class="item-catalog__subtitle">2 товара</div>
+									<div class="item-catalog__text">Современные кремационные камеры –
+										инсинераторы – для решения проблемы
+										утилизации нефтешламов, и других
+										видов отходов.</div>
+								</div>
+								<div class="item-catalog__btn">
+									<a href="insinerator.html" class="item-catalog__button">Перейти</a>
+								</div>
+								<div class="item-catalog__image">
+									<img src="img/catalog/01.webp" alt="">
+								</div>
+							</div>
+							<div id="automated-loading" class="item-catalog__card">
+								<div class="item-catalog__top">
+									<h5 class="item-catalog__title">Автоматизированная загрузка
+										отходов</h5>
+									<div class="item-catalog__text">Бензиновые и дизельные для
+										автономной работы инсинератора
+										или крематора</div>
+								</div>
+								<div class="item-catalog__btn">
+									<a data-goto="#form" href="" class="item-catalog__button">Подробнее</a>
+								</div>
+								<div class="item-catalog__image">
+									<img src="img/catalog/06.webp" alt="">
+								</div>
+							</div>
+							<div id="grates" class="item-catalog__card">
+								<div class="item-catalog__top">
+									<h5 class="item-catalog__title">Колосниковые решетки</h5>
+									<div class="item-catalog__text">Из чугуна или бетона позволяют
+										ускорить процесс горения отходов,
+										экономят топливо</div>
+								</div>
+								<div class="item-catalog__btn">
+									<a data-goto="#form" href="" class="item-catalog__button">Подробнее</a>
+								</div>
+								<div class="item-catalog__image">
+									<img src="img/catalog/03.webp" alt="">
+								</div>
+							</div>
+							<div id="generators" class="item-catalog__card">
+								<div class="item-catalog__top">
+									<h5 class="item-catalog__title">Генераторы</h5>
+									<div class="item-catalog__text">Бензиновые и дизельные для
+										автономной работы инсинератора
+										или крематора</div>
+								</div>
+								<div class="item-catalog__btn">
+									<a data-goto="#form" href="" class="item-catalog__button">Подробнее</a>
+								</div>
+								<div class="item-catalog__image">
+									<img src="img/catalog/04.webp" alt="">
+								</div>
+							</div>
+							<div id="fuel-tanks" class="item-catalog__card">
+								<div class="item-catalog__top">
+									<h5 class="item-catalog__title">Емкость для ГСМ</h5>
+									<div class="item-catalog__text">От 100 до 5000 литров для
+										дизельных крематоров и
+										инсинераторов</div>
+								</div>
+								<div class="item-catalog__btn">
+									<a data-goto="#form" href="" class="item-catalog__button">Подробнее</a>
+								</div>
+								<div class="item-catalog__image">
+									<img src="img/catalog/05.webp" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__form">
+					<form data-popup-message="#form-message" id="form" data-dev action="files/sendmail/sendmail.php" method="POST" class="application__form form-apllication">
+						<h4 class="form-apllication__title title">Хотите сделать заказ <span>или получить консультацию?</span>
+						</h4>
+						<p class="form-apllication__text">Оставьте заявку, с Вами свяжется
+							специалист и подробно все расскажет.</p>
+						<div class="form-apllication__body">
+							<input autocomplete="off" type="text" name="form[usename]" data-error="Ошибка" placeholder="Ваше имя" class="form-apllication__input">
+							<input data-required autocomplete="off" type="tel" name="form[phone]" data-error="Введите номер телефона" placeholder="+7 (999) 999-99-99" class="form-apllication__input form-mask-input">
+						</div>
+						<button type="submit" class="form-apllication__button">Отправить</button>
+						<div class="form-apllication__checkbox checkbox">
+							<input data-required id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]">
+							<label for="c_2" class="checkbox__label"><span class="checkbox__text">Нажимая «Отправить», вы
+									соглашаетесь с
+									<span>Политикой обработки персональных данных</span></span></label>
+						</div>
+					</form>
+				</div>
+				<div class="footer__content">
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="about.html" class="menu-footer__link">О Компании</a></li>
+								<li class="menu-footer__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<button class="spoller-menu__title">Каталог</button>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="insinerator.html" class="spoller-menu__link">Инсинераторы
+													</a></li>
+												<li class="spoller-menu__item"><a href="cremator.html" class="spoller-menu__link">Крематоры</a></li>
+												<li class="spoller-menu__item"><a href="catalog.html" class="spoller-menu__link">Весь
+														каталог</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu-footer__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<a href="services.html" class="spoller-menu__title">Услуги</a>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Подбор и
+														изготовление
+														оборудования
+													</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Обучение
+														и
+														поддержка</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Запуск
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">
+														Обслуживание
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Разработка и аудит
+														технических заданий</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Ремонт
+														инсинераторов
+														и запасные части</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu-footer__item"><a href="leasing.html" class="menu-footer__link">Лизинг</a></li>
+								<li class="menu-footer__item"><a href="documents.html" class="menu-footer__link">Документы</a></li>
+								<li class="menu-footer__item"><a href="contacts.html" class="menu-footer__link">Контакты</a></li>
+								<li class="menu-footer__item"><a href="news.html" class="menu-footer__link">Новости</a></li>
+							</ul>
+						</nav>
+					</div>
+					<a href="index.html" class="footer__logo"><img src="img/footer-logo.webp" alt=""></a>
+					<ul class="footer__list">
+						<li class="footer__item"><a href="insinerator.html" class="footer__link">Инсинераторы</a></li>
+						<li class="footer__item"><a href="cremator.html" class="footer__link">Крематоры</a></li>
+						<li class="footer__item"><a data-goto="#form" href="" class="footer__link">Генераторы</a></li>
+						<li class="footer__item"><a data-goto="#form" href="" class="footer__link">Емкость для ГСМ</a></li>
+						<li class="footer__item"><a data-goto="#form" href="" class="footer__link">Автоматизированая загрузка
+								отходов</a></li>
+					</ul>
+					<div class="footer__contacts contacts-footer">
+						<button data-goto="#form" type="button" class="contacts-footer__button">Заказать
+							звонок</button>
+						<a href="tel:+7(3412)47-48-65" class="contacts-footer__phone _icon-phone">+7(3412)47-48-65</a>
+					</div>
+					<div class="footer__text text-footer">
+						<div class="text-footer__body">
+							<p class="text-footer__address">Адрес: Российская Федерация, г. Ижевск, ул. Зои Космодемьянской 15</p>
+							<p class="text-footer__hours">Часы работы: пн-пт с 9:00 до 18:00 / сб с 9:00 до 15:00</p>
+						</div>
+						<div class="text-footer__phones">
+							<a href="tel:8-982-990-98-98">Отдел продаж: 8-982-990-98-98</a>
+							<a href="tel:8-922-500-02-99">Отдел логистики: 8-922-500-02-99</a>
+						</div>
+					</div>
+					<div class="footer__social social-footer">
+						<a href="" class="social-footer__icon _icon-whatsapp"></a>
+						<a href="" class="social-footer__icon _icon-telegram"></a>
+						<a href="" class="social-footer__icon _icon-viber"></a>
+					</div>
+					<a href="" class="footer__copy">Публичная оферта</a>
+					<div class="footer__seo">
+						Создание и продвижение сайта: веб-студия
+						<a class="footer__link" href="">"SEO-технологии"</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="document_1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<a class="popup__gallery" href="">
+						<img src="img/documents/01.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="document_2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<div class="popup__gallery">
+						<img src="img/documents/02-1.webp" alt="Image">
+						<img src="img/documents/02-2.webp" alt="Image">
+						<img src="img/documents/02-3.webp" alt="Image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="document_3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<a class="popup__gallery" href="">
+						<img src="img/documents/03-1.webp" alt="Image">
+						<img src="img/documents/03-2.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="document_4" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<a class="popup__gallery" href="">
+						<img src="img/documents/04.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-message" aria-hidden="true" class="form-popup popup">
+		<div class="popup__wrapper form-popup__wrapper">
+			<div class="popup__content form-popup__content">
+				<button data-close type="button" class="popup__close form-popup__close"><span></span></button>
+				<div class="popup__text form-popup__text">
+					<p>Ваша заявка отправлена</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-popup" aria-hidden="true" class="form-popup popup">
+		<div class="popup__wrapper form-popup__wrapper">
+			<div class="popup__content form__cont">
+				<form data-popup-message="#form-message" id="form" data-dev action="files/sendmail/sendmail.php" method="POST" class="application__form form-apllication form-popup__apply"><button data-close type="button" class="popup__close form__close"><span></span></button>
+					<h4 class="form-apllication__title title form-popup__title">Хотите сделать заказ <span>или получить
+							консультацию?</span>
+					</h4>
+					<p class="form-apllication__text form-popup__txt">Оставьте заявку, с Вами свяжется
+						специалист и подробно все расскажет.</p>
+					<div class="form-apllication__body form-popup__body">
+						<input autocomplete="off" type="text" name="form[usename]" data-error="Ошибка" placeholder="Ваше имя" class="form-apllication__input form-popup__input">
+						<input data-required autocomplete="off" type="tel" name="form[phone]" data-error="Введите номер телефона" placeholder="+7 (999) 999-99-99" class="form-apllication__input form-mask-input form-popup__input">
+					</div>
+					<button type="submit" class="form-apllication__button form-popup__button">Отправить</button>
+					<div class="form-apllication__checkbox checkbox">
+						<input data-required id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]">
+						<label for="c_1" class="checkbox__label"><span class="checkbox__text">Нажимая «Отправить», вы
+								соглашаетесь с
+								<span>Политикой обработки персональных данных</span></span></label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20241007164021"></script>
+</body>
+
+</html>

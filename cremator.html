@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Крематоры</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241007164021">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20241007164021" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20241007164021"></script>-->
+
+</head>
+
+<body>
+	<div class="wrapper model-wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div class="top-header__body">
+						<p class="top-header__address">Адрес: Российская Федерация, г. Ижевск, ул. Зои Космодемьянской 15</p>
+						<p class="top-header__hours">Часы работы: пн-пт с 9:00 до 18:00 / сб с 9:00 до 15:00</p>
+					</div>
+					<div class="top-header__phones">
+						<a href="tel:8-982-990-98-98">Отдел продаж: 8-982-990-98-98</a>
+						<a href="tel:8-922-500-02-99">Отдел логистики: 8-922-500-02-99</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__left">
+						<a href="index.html" class="header__logo"><img src="img/logo.webp" alt=""></a>
+						<div class="header__search search-header">
+							<form action="catalog.html" method="GET" class="search-header__body" id="searchForm">
+								<input autocomplete="off" type="text" name="search" data-error="Ошибка" placeholder="Поиск по товарам" class="search-header__input" id="searchInput">
+								<button type="submit" class="search-header__button _icon-search" id="searchButton"></button>
+							</form>
+							<span class="search-header__tippy">Начните вводить тему...</span>
+							<div class="search-header__suggestions" id="suggestions"></div>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="about.html" class="menu__link">О Компании</a></li>
+								<li class="menu__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<button class="spoller-menu__title">Каталог</button>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="insinerator.html" class="spoller-menu__link">Инсинераторы
+													</a></li>
+												<li class="spoller-menu__item"><a href="cremator.html" class="spoller-menu__link">Крематоры</a></li>
+												<li class="spoller-menu__item"><a href="catalog.html" class="spoller-menu__link">Весь
+														каталог</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<button class="spoller-menu__title">Услуги</button>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Подбор и
+														изготовление
+														оборудования
+													</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Обучение
+														и
+														поддержка</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Запуск
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">
+														Обслуживание
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Разработка и аудит
+														технических заданий</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Ремонт
+														инсинераторов
+														и запасные части</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item"><a href="leasing.html" class="menu__link">Лизинг</a></li>
+								<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div data-da=".header__menu,1439" class="header__right">
+						<a href="" class="header__social _icon-whatsapp"></a>
+						<a href="" class="header__social _icon-telegram"></a>
+						<a href="" class="header__social _icon-viber"></a>
+					</div>
+				</div>
+				<div class="header__bottom bottom-header">
+					<a href="tel:+7(3412)47-48-65" class="bottom-header__phone _icon-phone">+7(3412)47-48-65</a>
+					<button data-popup="#form-popup" type="button" class="bottom-header__button button">Заказать звонок</button>
+				</div>
+			</div>
+		</header>
+		<main class="product">
+			<div class="product__top top-product">
+				<div class="top-product__container">
+					<h1 class="top-product__title title">Крематоры</h1>
+					<div class="top-product__breadcrumbs breadcrumbs">
+						<a href="index.html" class="breadcrumbs__link">Главная</a><span>/</span>
+						<a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+						<span>/</span>
+						<p class="breadcrumbs__active">Крематоры</p>
+					</div>
+				</div>
+			</div>
+			<div class="product__model model-product">
+				<div class="model-product__container">
+					<a data-popup="#insinerator" href="" class="model-product__image">
+						<img src="img/3dmodels/02.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+			<section class="product__cards cards-product">
+				<div class="cards-product__container">
+					<div class="cards-product__body">
+						<div class="cards-product__item item-card-product">
+							<h3 class="item-card-product__title item-card-product__title_cremator">КРЕМАТОР КР-50</h3>
+							<div class="item-card-product__body">
+								<div class="item-card-product__subtitle">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</div>
+								<div class="item-card-product__specification">
+									<p>Производительность - до 25 кг в час</p>
+									<p>Максимальный объем загрузки - 50 кг</p>
+									<p>Эксплуатационные размеры Д/Ш/В (мм) - 1200х500х1500</p>
+									<p>Размеры загрузочного проема Д/Ш (мм) - 730х370</p>
+									<p>Материал футеровки основной и дополнительной камеры – нет</p>
+									<p>Материал футеровки крышки загрузочного проема –
+										керамическое волокно</p>
+									<p>Дополнительная система подачи кислорода – доп. опция</p>
+									<p>Производитель горелок Ecoflam/Baltur (Италия)</p>
+									<p>Вид потребляемого топлива – Дизельное/Природный газ</p>
+									<p>Общий вес 300 кг</p>
+									<p>Колосниковые решетки – доп. опция</p>
+									<p>Камера дополнительного дожигания – доп. опция</p>
+									<p>Количество горелок в основной камере - 1</p>
+									<p>Гарантия 24 месяца</p>
+								</div>
+							</div>
+							<button data-goto="#form" type="button" class="item-card-product__button">Заказать</button>
+						</div>
+						<div class="cards-product__item item-card-product">
+							<h3 class="item-card-product__title item-card-product__title_cremator">КРЕМАТОР КР-100</h3>
+							<div class="item-card-product__body">
+								<div class="item-card-product__subtitle">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</div>
+								<div class="item-card-product__specification">
+									<p>Производительность - до 25 кг в час</p>
+									<p>Максимальный объем загрузки - 50 кг</p>
+									<p>Эксплуатационные размеры Д/Ш/В (мм) - 1200х500х1500</p>
+									<p>Размеры загрузочного проема Д/Ш (мм) - 730х370</p>
+									<p>Материал футеровки основной и дополнительной камеры – нет</p>
+									<p>Материал футеровки крышки загрузочного проема –
+										керамическое волокно</p>
+									<p>Дополнительная система подачи кислорода – доп. опция</p>
+									<p>Производитель горелок Ecoflam/Baltur (Италия)</p>
+									<p>Вид потребляемого топлива – Дизельное/Природный газ</p>
+									<p>Общий вес 300 кг</p>
+									<p>Колосниковые решетки – доп. опция</p>
+									<p>Камера дополнительного дожигания – доп. опция</p>
+									<p>Количество горелок в основной камере - 1</p>
+									<p>Гарантия 24 месяца</p>
+								</div>
+							</div>
+							<button data-goto="#form" type="button" class="item-card-product__button">Заказать</button>
+						</div>
+						<div class="cards-product__item item-card-product">
+							<h3 class="item-card-product__title item-card-product__title_cremator">КРЕМАТОР КР-200</h3>
+							<div class="item-card-product__body">
+								<div class="item-card-product__subtitle">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</div>
+								<div class="item-card-product__specification">
+									<p>Производительность - до 25 кг в час</p>
+									<p>Максимальный объем загрузки - 50 кг</p>
+									<p>Эксплуатационные размеры Д/Ш/В (мм) - 1200х500х1500</p>
+									<p>Размеры загрузочного проема Д/Ш (мм) - 730х370</p>
+									<p>Материал футеровки основной и дополнительной камеры – нет</p>
+									<p>Материал футеровки крышки загрузочного проема –
+										керамическое волокно</p>
+									<p>Дополнительная система подачи кислорода – доп. опция</p>
+									<p>Производитель горелок Ecoflam/Baltur (Италия)</p>
+									<p>Вид потребляемого топлива – Дизельное/Природный газ</p>
+									<p>Общий вес 300 кг</p>
+									<p>Колосниковые решетки – доп. опция</p>
+									<p>Камера дополнительного дожигания – доп. опция</p>
+									<p>Количество горелок в основной камере - 1</p>
+									<p>Гарантия 24 месяца</p>
+								</div>
+							</div>
+							<button data-goto="#form" type="button" class="item-card-product__button">Заказать</button>
+						</div>
+						<div class="cards-product__item item-card-product">
+							<h3 class="item-card-product__title item-card-product__title_cremator">КРЕМАТОР КР-300</h3>
+							<div class="item-card-product__body">
+								<div class="item-card-product__subtitle">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</div>
+								<div class="item-card-product__specification">
+									<p>Производительность - до 25 кг в час</p>
+									<p>Максимальный объем загрузки - 50 кг</p>
+									<p>Эксплуатационные размеры Д/Ш/В (мм) - 1200х500х1500</p>
+									<p>Размеры загрузочного проема Д/Ш (мм) - 730х370</p>
+									<p>Материал футеровки основной и дополнительной камеры – нет</p>
+									<p>Материал футеровки крышки загрузочного проема –
+										керамическое волокно</p>
+									<p>Дополнительная система подачи кислорода – доп. опция</p>
+									<p>Производитель горелок Ecoflam/Baltur (Италия)</p>
+									<p>Вид потребляемого топлива – Дизельное/Природный газ</p>
+									<p>Общий вес 300 кг</p>
+									<p>Колосниковые решетки – доп. опция</p>
+									<p>Камера дополнительного дожигания – доп. опция</p>
+									<p>Количество горелок в основной камере - 1</p>
+									<p>Гарантия 24 месяца</p>
+								</div>
+							</div>
+							<button data-goto="#form" type="button" class="item-card-product__button">Заказать</button>
+						</div>
+						<div class="cards-product__item item-card-product">
+							<h3 class="item-card-product__title item-card-product__title_cremator">КРЕМАТОР КР-500</h3>
+							<div class="item-card-product__body">
+								<div class="item-card-product__subtitle">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</div>
+								<div class="item-card-product__specification">
+									<p>Производительность - до 25 кг в час</p>
+									<p>Максимальный объем загрузки - 50 кг</p>
+									<p>Эксплуатационные размеры Д/Ш/В (мм) - 1200х500х1500</p>
+									<p>Размеры загрузочного проема Д/Ш (мм) - 730х370</p>
+									<p>Материал футеровки основной и дополнительной камеры – нет</p>
+									<p>Материал футеровки крышки загрузочного проема –
+										керамическое волокно</p>
+									<p>Дополнительная система подачи кислорода – доп. опция</p>
+									<p>Производитель горелок Ecoflam/Baltur (Италия)</p>
+									<p>Вид потребляемого топлива – Дизельное/Природный газ</p>
+									<p>Общий вес 300 кг</p>
+									<p>Колосниковые решетки – доп. опция</p>
+									<p>Камера дополнительного дожигания – доп. опция</p>
+									<p>Количество горелок в основной камере - 1</p>
+									<p>Гарантия 24 месяца</p>
+								</div>
+							</div>
+							<button data-goto="#form" type="button" class="item-card-product__button">Заказать</button>
+						</div>
+						<div class="cards-product__item item-card-product">
+							<h3 class="item-card-product__title item-card-product__title_cremator">КРЕМАТОР КР-1000</h3>
+							<div class="item-card-product__body">
+								<div class="item-card-product__subtitle">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</div>
+								<div class="item-card-product__specification">
+									<p>Производительность - до 25 кг в час</p>
+									<p>Максимальный объем загрузки - 50 кг</p>
+									<p>Эксплуатационные размеры Д/Ш/В (мм) - 1200х500х1500</p>
+									<p>Размеры загрузочного проема Д/Ш (мм) - 730х370</p>
+									<p>Материал футеровки основной и дополнительной камеры – нет</p>
+									<p>Материал футеровки крышки загрузочного проема –
+										керамическое волокно</p>
+									<p>Дополнительная система подачи кислорода – доп. опция</p>
+									<p>Производитель горелок Ecoflam/Baltur (Италия)</p>
+									<p>Вид потребляемого топлива – Дизельное/Природный газ</p>
+									<p>Общий вес 300 кг</p>
+									<p>Колосниковые решетки – доп. опция</p>
+									<p>Камера дополнительного дожигания – доп. опция</p>
+									<p>Количество горелок в основной камере - 1</p>
+									<p>Гарантия 24 месяца</p>
+								</div>
+							</div>
+							<button data-goto="#form" type="button" class="item-card-product__button">Заказать</button>
+						</div>
+						<div class="cards-product__item item-card-product">
+							<h3 class="item-card-product__title item-card-product__title_cremator">КРЕМАТОР КР-2000</h3>
+							<div class="item-card-product__body">
+								<div class="item-card-product__subtitle">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</div>
+								<div class="item-card-product__specification">
+									<p>Производительность - до 25 кг в час</p>
+									<p>Максимальный объем загрузки - 50 кг</p>
+									<p>Эксплуатационные размеры Д/Ш/В (мм) - 1200х500х1500</p>
+									<p>Размеры загрузочного проема Д/Ш (мм) - 730х370</p>
+									<p>Материал футеровки основной и дополнительной камеры – нет</p>
+									<p>Материал футеровки крышки загрузочного проема –
+										керамическое волокно</p>
+									<p>Дополнительная система подачи кислорода – доп. опция</p>
+									<p>Производитель горелок Ecoflam/Baltur (Италия)</p>
+									<p>Вид потребляемого топлива – Дизельное/Природный газ</p>
+									<p>Общий вес 300 кг</p>
+									<p>Колосниковые решетки – доп. опция</p>
+									<p>Камера дополнительного дожигания – доп. опция</p>
+									<p>Количество горелок в основной камере - 1</p>
+									<p>Гарантия 24 месяца</p>
+								</div>
+							</div>
+							<button data-goto="#form" type="button" class="item-card-product__button">Заказать</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product__gallery gallery-product">
+				<div class="gallery-product__container">
+					<div class="gallery-product__body">
+						<p class="gallery-product__text gallery-product__text_top">Инсинератор для биологических отходов — это
+							простая в техническом
+							плане
+							конструкция, способная справляться с задачей по сжиганию мусора на максимально
+							эффективном уровне. Ее основным преимуществом становится экологичность, ведь объекты, помещенные в
+							печь, проходят процедуру термической обработки
+							с уничтожением всех патогенных бактерий и микроорганизмов.</p>
+						<h4 class="gallery-product__title">Зачем нужен инсинератор для биологических отходов</h4>
+						<p class="gallery-product__text">Инсинераторы для сжигания биоотходов востребованы, в первую очередь,
+							на
+							производствах и предприятиях, связанных с фармакологией. Аналогичными
+							устройствами пользуется персонал всевозможных медицинских клиник, ветеринарных учреждений и станций
+							по
+							борьбе с болезнями животных.
+						</p>
+						<p class="gallery-product__text">Посредством такого оборудования можно быстро и безопасно
+							утилизировать:
+						</p>
+						<ul class="gallery-product__list">
+							<li class="gallery-product__item">послеоперационные остатки;</li>
+							<li class="gallery-product__item">медицинские инструменты и просроченные лекарства;</li>
+							<li class="gallery-product__item">расходники из инфекционных отделений;
+							</li>
+							<li class="gallery-product__item">абортивные материалы;</li>
+							<li class="gallery-product__item">отходы, генерируемые лабораториями и пр.</li>
+						</ul>
+						<p class="gallery-product__text">Инсинератор для биологических отходов решает проблему, связанную с
+							распространением опасных патологий:
+							ботулизма, бешенства, гепатита и столбняка.
+						</p>
+					</div>
+					<div class="gallery-product__images images-gallery">
+						<h3 class="images-gallery__title">Фотогалерея</h3>
+						<div class="images-gallery__body">
+							<div class="images-gallery__card">
+								<img src="img/insineratorcremator/05.webp" alt="Image">
+							</div>
+							<div class="images-gallery__card">
+								<img src="img/insineratorcremator/06.webp" alt="Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__form">
+					<form data-popup-message="#form-message" id="form" data-dev action="files/sendmail/sendmail.php" method="POST" class="application__form form-apllication">
+						<h4 class="form-apllication__title title">Хотите сделать заказ <span>или получить консультацию?</span>
+						</h4>
+						<p class="form-apllication__text">Оставьте заявку, с Вами свяжется
+							специалист и подробно все расскажет.</p>
+						<div class="form-apllication__body">
+							<input autocomplete="off" type="text" name="form[usename]" data-error="Ошибка" placeholder="Ваше имя" class="form-apllication__input">
+							<input data-required autocomplete="off" type="tel" name="form[phone]" data-error="Введите номер телефона" placeholder="+7 (999) 999-99-99" class="form-apllication__input form-mask-input">
+						</div>
+						<button type="submit" class="form-apllication__button">Отправить</button>
+						<div class="form-apllication__checkbox checkbox">
+							<input data-required id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]">
+							<label for="c_2" class="checkbox__label"><span class="checkbox__text">Нажимая «Отправить», вы
+									соглашаетесь с
+									<span>Политикой обработки персональных данных</span></span></label>
+						</div>
+					</form>
+				</div>
+				<div class="footer__content">
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="about.html" class="menu-footer__link">О Компании</a></li>
+								<li class="menu-footer__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<button class="spoller-menu__title">Каталог</button>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="insinerator.html" class="spoller-menu__link">Инсинераторы
+													</a></li>
+												<li class="spoller-menu__item"><a href="cremator.html" class="spoller-menu__link">Крематоры</a></li>
+												<li class="spoller-menu__item"><a href="catalog.html" class="spoller-menu__link">Весь
+														каталог</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu-footer__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<a href="services.html" class="spoller-menu__title">Услуги</a>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Подбор и
+														изготовление
+														оборудования
+													</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Обучение
+														и
+														поддержка</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Запуск
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">
+														Обслуживание
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Разработка и аудит
+														технических заданий</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Ремонт
+														инсинераторов
+														и запасные части</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu-footer__item"><a href="leasing.html" class="menu-footer__link">Лизинг</a></li>
+								<li class="menu-footer__item"><a href="documents.html" class="menu-footer__link">Документы</a></li>
+								<li class="menu-footer__item"><a href="contacts.html" class="menu-footer__link">Контакты</a></li>
+								<li class="menu-footer__item"><a href="news.html" class="menu-footer__link">Новости</a></li>
+							</ul>
+						</nav>
+					</div>
+					<a href="index.html" class="footer__logo"><img src="img/footer-logo.webp" alt=""></a>
+					<ul class="footer__list">
+						<li class="footer__item"><a href="insinerator.html" class="footer__link">Инсинераторы</a></li>
+						<li class="footer__item"><a href="cremator.html" class="footer__link">Крематоры</a></li>
+						<li class="footer__item"><a data-goto="#form" href="" class="footer__link">Генераторы</a></li>
+						<li class="footer__item"><a data-goto="#form" href="" class="footer__link">Емкость для ГСМ</a></li>
+						<li class="footer__item"><a data-goto="#form" href="" class="footer__link">Автоматизированая загрузка
+								отходов</a></li>
+					</ul>
+					<div class="footer__contacts contacts-footer">
+						<button data-goto="#form" type="button" class="contacts-footer__button">Заказать
+							звонок</button>
+						<a href="tel:+7(3412)47-48-65" class="contacts-footer__phone _icon-phone">+7(3412)47-48-65</a>
+					</div>
+					<div class="footer__text text-footer">
+						<div class="text-footer__body">
+							<p class="text-footer__address">Адрес: Российская Федерация, г. Ижевск, ул. Зои Космодемьянской 15</p>
+							<p class="text-footer__hours">Часы работы: пн-пт с 9:00 до 18:00 / сб с 9:00 до 15:00</p>
+						</div>
+						<div class="text-footer__phones">
+							<a href="tel:8-982-990-98-98">Отдел продаж: 8-982-990-98-98</a>
+							<a href="tel:8-922-500-02-99">Отдел логистики: 8-922-500-02-99</a>
+						</div>
+					</div>
+					<div class="footer__social social-footer">
+						<a href="" class="social-footer__icon _icon-whatsapp"></a>
+						<a href="" class="social-footer__icon _icon-telegram"></a>
+						<a href="" class="social-footer__icon _icon-viber"></a>
+					</div>
+					<a href="" class="footer__copy">Публичная оферта</a>
+					<div class="footer__seo">
+						Создание и продвижение сайта: веб-студия
+						<a class="footer__link" href="">"SEO-технологии"</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="insinerator" aria-hidden="true" class="ins__popup popup">
+		<div class="popup__wrapper product-wrapper">
+			<div class="popup__content product__content">
+				<button data-close type="button" class="popup__close product__close"><span></span></button>
+			</div>
+		</div>
+	</div>
+	<div id="document_1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<a class="popup__gallery" href="">
+						<img src="img/documents/01.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="document_2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<div class="popup__gallery">
+						<img src="img/documents/02-1.webp" alt="Image">
+						<img src="img/documents/02-2.webp" alt="Image">
+						<img src="img/documents/02-3.webp" alt="Image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="document_3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<a class="popup__gallery" href="">
+						<img src="img/documents/03-1.webp" alt="Image">
+						<img src="img/documents/03-2.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="document_4" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<a class="popup__gallery" href="">
+						<img src="img/documents/04.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-message" aria-hidden="true" class="form-popup popup">
+		<div class="popup__wrapper form-popup__wrapper">
+			<div class="popup__content form-popup__content">
+				<button data-close type="button" class="popup__close form-popup__close"><span></span></button>
+				<div class="popup__text form-popup__text">
+					<p>Ваша заявка отправлена</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-popup" aria-hidden="true" class="form-popup popup">
+		<div class="popup__wrapper form-popup__wrapper">
+			<div class="popup__content form__cont">
+				<form data-popup-message="#form-message" id="form" data-dev action="files/sendmail/sendmail.php" method="POST" class="application__form form-apllication form-popup__apply"><button data-close type="button" class="popup__close form__close"><span></span></button>
+					<h4 class="form-apllication__title title form-popup__title">Хотите сделать заказ <span>или получить
+							консультацию?</span>
+					</h4>
+					<p class="form-apllication__text form-popup__txt">Оставьте заявку, с Вами свяжется
+						специалист и подробно все расскажет.</p>
+					<div class="form-apllication__body form-popup__body">
+						<input autocomplete="off" type="text" name="form[usename]" data-error="Ошибка" placeholder="Ваше имя" class="form-apllication__input form-popup__input">
+						<input data-required autocomplete="off" type="tel" name="form[phone]" data-error="Введите номер телефона" placeholder="+7 (999) 999-99-99" class="form-apllication__input form-mask-input form-popup__input">
+					</div>
+					<button type="submit" class="form-apllication__button form-popup__button">Отправить</button>
+					<div class="form-apllication__checkbox checkbox">
+						<input data-required id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]">
+						<label for="c_1" class="checkbox__label"><span class="checkbox__text">Нажимая «Отправить», вы
+								соглашаетесь с
+								<span>Политикой обработки персональных данных</span></span></label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20241007164021"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js?_v=20241007164021"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js?_v=20241007164021"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js?_v=20241007164021"></script>
+	<script>
+		// Добавление 3d моделей
+		const container = document.querySelector('.popup__content');
+
+		// Создаем сцену
+		const scene = new THREE.Scene();
+		scene.background = new THREE.Color(0xffffff);
+
+		// Создаем камеру
+		const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
+		camera.position.set(0, 2, 5);
+
+		// Создаем рендерер
+		const renderer = new THREE.WebGLRenderer();
+		renderer.setSize(container.clientWidth, container.clientHeight);
+		container.appendChild(renderer.domElement);
+
+		// Добавляем свет
+		const light = new THREE.DirectionalLight(0xffffff, 1);
+		light.position.set(1, 1, 1).normalize();
+		scene.add(light);
+
+		// Добавляем контроллеры орбиты
+		const controls = new THREE.OrbitControls(camera, renderer.domElement);
+		controls.enableDamping = true; // Включаем демпфирование (инерцию)
+		controls.dampingFactor = 0.25;
+		controls.screenSpacePanning = false;
+		controls.minDistance = 1;
+		controls.maxDistance = 1000;
+
+		// Загружаем glTF модель
+		const loader = new THREE.GLTFLoader();
+		loader.load('img/3dmodels/02.gltf', function(gltf) {
+			scene.add(gltf.scene);
+		}, undefined, function(error) {
+			console.error(error);
+		});
+
+		// Анимация
+		function animate() {
+			requestAnimationFrame(animate);
+			controls.update(); // Обновляем контроллеры орбиты
+			renderer.render(scene, camera);
+		}
+		animate();
+
+		// Обработка изменения размера окна
+		window.addEventListener('resize', function() {
+			const width = container.clientWidth;
+			const height = container.clientHeight;
+			renderer.setSize(width, height);
+			camera.aspect = width / height;
+			camera.updateProjectionMatrix();
+		});
+	</script>
+
+</body>
+
+</html>

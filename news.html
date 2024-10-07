@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Новости</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241007164021">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20241007164021" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20241007164021"></script>-->
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div class="top-header__body">
+						<p class="top-header__address">Адрес: Российская Федерация, г. Ижевск, ул. Зои Космодемьянской 15</p>
+						<p class="top-header__hours">Часы работы: пн-пт с 9:00 до 18:00 / сб с 9:00 до 15:00</p>
+					</div>
+					<div class="top-header__phones">
+						<a href="tel:8-982-990-98-98">Отдел продаж: 8-982-990-98-98</a>
+						<a href="tel:8-922-500-02-99">Отдел логистики: 8-922-500-02-99</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__left">
+						<a href="index.html" class="header__logo"><img src="img/logo.webp" alt=""></a>
+						<div class="header__search search-header">
+							<form action="catalog.html" method="GET" class="search-header__body" id="searchForm">
+								<input autocomplete="off" type="text" name="search" data-error="Ошибка" placeholder="Поиск по товарам" class="search-header__input" id="searchInput">
+								<button type="submit" class="search-header__button _icon-search" id="searchButton"></button>
+							</form>
+							<span class="search-header__tippy">Начните вводить тему...</span>
+							<div class="search-header__suggestions" id="suggestions"></div>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="about.html" class="menu__link">О Компании</a></li>
+								<li class="menu__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<button class="spoller-menu__title">Каталог</button>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="insinerator.html" class="spoller-menu__link">Инсинераторы
+													</a></li>
+												<li class="spoller-menu__item"><a href="cremator.html" class="spoller-menu__link">Крематоры</a></li>
+												<li class="spoller-menu__item"><a href="catalog.html" class="spoller-menu__link">Весь
+														каталог</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<button class="spoller-menu__title">Услуги</button>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Подбор и
+														изготовление
+														оборудования
+													</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Обучение
+														и
+														поддержка</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Запуск
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">
+														Обслуживание
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Разработка и аудит
+														технических заданий</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Ремонт
+														инсинераторов
+														и запасные части</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu__item"><a href="leasing.html" class="menu__link">Лизинг</a></li>
+								<li class="menu__item"><a href="documents.html" class="menu__link">Документы</a></li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div data-da=".header__menu,1439" class="header__right">
+						<a href="" class="header__social _icon-whatsapp"></a>
+						<a href="" class="header__social _icon-telegram"></a>
+						<a href="" class="header__social _icon-viber"></a>
+					</div>
+				</div>
+				<div class="header__bottom bottom-header">
+					<a href="tel:+7(3412)47-48-65" class="bottom-header__phone _icon-phone">+7(3412)47-48-65</a>
+					<button data-popup="#form-popup" type="button" class="bottom-header__button button">Заказать звонок</button>
+				</div>
+			</div>
+		</header>
+		<main class="products">
+			<div class="products__top top-products">
+				<div class="top-products__container">
+					<h1 class="top-products__title title">Новости</h1>
+					<div class="top-products__breadcrumbs breadcrumbs">
+						<a href="index.html" class="breadcrumbs__link">Главная</a>
+						<span>/</span>
+						<p class="breadcrumbs__active">Новости</p>
+					</div>
+				</div>
+			</div>
+			<section class="page__news news">
+				<div class="news__container">
+					<div class="news__body">
+						<div class="news__item item-news">
+							<div class="item-news__content">
+								<div class="item-news__image ibg item-news__image_body"><img data-src="img/news/01.webp" alt="">
+									<div class="item-news__top">
+										<h3 class="item-news__title">Сортировка мусора
+											<p>Мусорная реформа в России
+											</p>
+										</h3>
+									</div>
+									<a data-popup="#news_1" href="" class="item-news__button">подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="news__item item-news">
+							<div class="item-news__content">
+								<div class="item-news__image ibg item-news__image_body"><img data-src="img/news/02.webp" alt="">
+									<div class="item-news__top">
+										<h3 class="item-news__title">Утилизация отходов в 2024 году
+										</h3>
+									</div>
+									<a data-popup="#news_2" href="" class="item-news__button">подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="news__item item-news">
+							<div class="item-news__content">
+								<div class="item-news__image ibg item-news__image_body"><img data-src="img/news/03.webp" alt="">
+									<div class="item-news__top">
+										<h3 class="item-news__title">В России появится система «Экомониторинг» для наблюдения за
+											состоянием окружающей среды</h3>
+									</div>
+									<a data-popup="#news_3" href="" class="item-news__button">подробнее</a>
+								</div>
+							</div>
+						</div>
+						<div class="news__item item-news">
+							<div class="item-news__content">
+								<div class="item-news__image ibg item-news__image_body"><img data-src="img/news/04.webp" alt="">
+									<div class="item-news__top">
+										<h3 class="item-news__title">Классы опасности отходов в 2024 году
+										</h3>
+									</div>
+									<a data-popup="#news_4" href="" class="item-news__button">подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__form">
+					<form data-popup-message="#form-message" id="form" data-dev action="files/sendmail/sendmail.php" method="POST" class="application__form form-apllication">
+						<h4 class="form-apllication__title title">Хотите сделать заказ <span>или получить консультацию?</span>
+						</h4>
+						<p class="form-apllication__text">Оставьте заявку, с Вами свяжется
+							специалист и подробно все расскажет.</p>
+						<div class="form-apllication__body">
+							<input autocomplete="off" type="text" name="form[usename]" data-error="Ошибка" placeholder="Ваше имя" class="form-apllication__input">
+							<input data-required autocomplete="off" type="tel" name="form[phone]" data-error="Введите номер телефона" placeholder="+7 (999) 999-99-99" class="form-apllication__input form-mask-input">
+						</div>
+						<button type="submit" class="form-apllication__button">Отправить</button>
+						<div class="form-apllication__checkbox checkbox">
+							<input data-required id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]">
+							<label for="c_2" class="checkbox__label"><span class="checkbox__text">Нажимая «Отправить», вы
+									соглашаетесь с
+									<span>Политикой обработки персональных данных</span></span></label>
+						</div>
+					</form>
+				</div>
+				<div class="footer__content">
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="about.html" class="menu-footer__link">О Компании</a></li>
+								<li class="menu-footer__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<button class="spoller-menu__title">Каталог</button>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="insinerator.html" class="spoller-menu__link">Инсинераторы
+													</a></li>
+												<li class="spoller-menu__item"><a href="cremator.html" class="spoller-menu__link">Крематоры</a></li>
+												<li class="spoller-menu__item"><a href="catalog.html" class="spoller-menu__link">Весь
+														каталог</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu-footer__item">
+									<div data-menu-spollers class="menu__spoller spoller-menu">
+										<div class="spoller-menu__item">
+											<a href="services.html" class="spoller-menu__title">Услуги</a>
+											<ul class="spoller-menu__body">
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Подбор и
+														изготовление
+														оборудования
+													</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Обучение
+														и
+														поддержка</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Запуск
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">
+														Обслуживание
+														оборудования</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Разработка и аудит
+														технических заданий</a></li>
+												<li class="spoller-menu__item"><a href="services.html" class="spoller-menu__link">Ремонт
+														инсинераторов
+														и запасные части</a></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="menu-footer__item"><a href="leasing.html" class="menu-footer__link">Лизинг</a></li>
+								<li class="menu-footer__item"><a href="documents.html" class="menu-footer__link">Документы</a></li>
+								<li class="menu-footer__item"><a href="contacts.html" class="menu-footer__link">Контакты</a></li>
+								<li class="menu-footer__item"><a href="news.html" class="menu-footer__link">Новости</a></li>
+							</ul>
+						</nav>
+					</div>
+					<a href="index.html" class="footer__logo"><img src="img/footer-logo.webp" alt=""></a>
+					<ul class="footer__list">
+						<li class="footer__item"><a href="insinerator.html" class="footer__link">Инсинераторы</a></li>
+						<li class="footer__item"><a href="cremator.html" class="footer__link">Крематоры</a></li>
+						<li class="footer__item"><a data-goto="#form" href="" class="footer__link">Генераторы</a></li>
+						<li class="footer__item"><a data-goto="#form" href="" class="footer__link">Емкость для ГСМ</a></li>
+						<li class="footer__item"><a data-goto="#form" href="" class="footer__link">Автоматизированая загрузка
+								отходов</a></li>
+					</ul>
+					<div class="footer__contacts contacts-footer">
+						<button data-goto="#form" type="button" class="contacts-footer__button">Заказать
+							звонок</button>
+						<a href="tel:+7(3412)47-48-65" class="contacts-footer__phone _icon-phone">+7(3412)47-48-65</a>
+					</div>
+					<div class="footer__text text-footer">
+						<div class="text-footer__body">
+							<p class="text-footer__address">Адрес: Российская Федерация, г. Ижевск, ул. Зои Космодемьянской 15</p>
+							<p class="text-footer__hours">Часы работы: пн-пт с 9:00 до 18:00 / сб с 9:00 до 15:00</p>
+						</div>
+						<div class="text-footer__phones">
+							<a href="tel:8-982-990-98-98">Отдел продаж: 8-982-990-98-98</a>
+							<a href="tel:8-922-500-02-99">Отдел логистики: 8-922-500-02-99</a>
+						</div>
+					</div>
+					<div class="footer__social social-footer">
+						<a href="" class="social-footer__icon _icon-whatsapp"></a>
+						<a href="" class="social-footer__icon _icon-telegram"></a>
+						<a href="" class="social-footer__icon _icon-viber"></a>
+					</div>
+					<a href="" class="footer__copy">Публичная оферта</a>
+					<div class="footer__seo">
+						Создание и продвижение сайта: веб-студия
+						<a class="footer__link" href="">"SEO-технологии"</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="document_1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<a class="popup__gallery" href="">
+						<img src="img/documents/01.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="document_2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<div class="popup__gallery">
+						<img src="img/documents/02-1.webp" alt="Image">
+						<img src="img/documents/02-2.webp" alt="Image">
+						<img src="img/documents/02-3.webp" alt="Image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="document_3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<a class="popup__gallery" href="">
+						<img src="img/documents/03-1.webp" alt="Image">
+						<img src="img/documents/03-2.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="document_4" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<a class="popup__gallery" href="">
+						<img src="img/documents/04.webp" alt="Image">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-message" aria-hidden="true" class="form-popup popup">
+		<div class="popup__wrapper form-popup__wrapper">
+			<div class="popup__content form-popup__content">
+				<button data-close type="button" class="popup__close form-popup__close"><span></span></button>
+				<div class="popup__text form-popup__text">
+					<p>Ваша заявка отправлена</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-popup" aria-hidden="true" class="form-popup popup">
+		<div class="popup__wrapper form-popup__wrapper">
+			<div class="popup__content form__cont">
+				<form data-popup-message="#form-message" id="form" data-dev action="files/sendmail/sendmail.php" method="POST" class="application__form form-apllication form-popup__apply"><button data-close type="button" class="popup__close form__close"><span></span></button>
+					<h4 class="form-apllication__title title form-popup__title">Хотите сделать заказ <span>или получить
+							консультацию?</span>
+					</h4>
+					<p class="form-apllication__text form-popup__txt">Оставьте заявку, с Вами свяжется
+						специалист и подробно все расскажет.</p>
+					<div class="form-apllication__body form-popup__body">
+						<input autocomplete="off" type="text" name="form[usename]" data-error="Ошибка" placeholder="Ваше имя" class="form-apllication__input form-popup__input">
+						<input data-required autocomplete="off" type="tel" name="form[phone]" data-error="Введите номер телефона" placeholder="+7 (999) 999-99-99" class="form-apllication__input form-mask-input form-popup__input">
+					</div>
+					<button type="submit" class="form-apllication__button form-popup__button">Отправить</button>
+					<div class="form-apllication__checkbox checkbox">
+						<input data-required id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]">
+						<label for="c_1" class="checkbox__label"><span class="checkbox__text">Нажимая «Отправить», вы
+								соглашаетесь с
+								<span>Политикой обработки персональных данных</span></span></label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="news_1" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<div class="popup__news news-popup news-popup_1">
+						<h3 class="news-popup__title">Сортировка мусора
+							<p>Мусорная реформа в России
+							</p>
+						</h3>
+						<p class="news-popup__text">По данным природоохранных организаций, наша страна переживает настоящий
+							«мусорный кризис». И сортировка отходов — это не просто дань моде, а острая необходимость</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В России идет мусорная реформа, внедряется двухпоточная система сбора
+								отходов.</li>
+							<li class="news-popup__item">Вторсырье включает пластик, стекло, металл, макулатуру, планируется
+								раздельный сбор пластика по видам.</li>
+						</ul>
+						<p class="news-popup__text">Опыт европейских стран</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В Швейцарии, Германии и Австрии сортировка отходов является обязательной,
+								за нарушения предусмотрены штрафы.</li>
+							<li class="news-popup__item">В Германии развита инфраструктура раздельного сбора, работает более 5
+								тысяч перерабатывающих компаний</li>
+						</ul>
+						<p class="news-popup__text">Сортировка отходов в США</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В США сортировка отходов активно пропагандируется, проводится День
+								ресайклинга.</li>
+							<li class="news-popup__item">Введена дифференцированная система оплаты за вывоз мусора, поощряющая
+								сортировку.</li>
+						</ul>
+						<p class="news-popup__text">Ситуация в Азии</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В Азии сортировка отходов развита слабо, Китай недавно начал активно
+								заниматься этим вопросом.</li>
+							<li class="news-popup__item">В Китае используются меры стимулирования, такие как бесплатные билеты в
+								обмен на пластик.</li>
+						</ul>
+						<p class="news-popup__text">Советы эксперта по сортировке мусора</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Начинать с простых видов отходов, таких как батарейки, крышки,
+								макулатура.
+							</li>
+							<li class="news-popup__item">Постепенно добавлять новые виды отходов, не заставляя себя.</li>
+							<li class="news-popup__item">Приучать детей к сортировке через игровые форматы.</li>
+						</ul>
+						<p class="news-popup__text">Куда сдавать отсортированный мусор</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Контейнеры во дворе принимают макулатуру, стекло, металл, некоторые виды
+								пластика.
+							</li>
+							<li class="news-popup__item">Экоцентры и пункты приема принимают различные виды отходов, включая
+								пластик, электромусор, батарейки.</li>
+							<li class="news-popup__item">Волонтерские акции и сервисы по вывозу вторсырья также доступны для сдачи
+								отходов.</li>
+						</ul>
+						<p class="news-popup__text">Что происходит с отходами после сортировки</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Вторсырье сортируется и отправляется на переработку на заводы.</li>
+							<li class="news-popup__item">Батарейки, лампочки, термометры требуют специальной утилизации.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="news_2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<div class="popup__news news-popup news-popup_2">
+						<h3 class="news-popup__title">Утилизация отходов в 2024 году</h3>
+						<p class="news-popup__text">Обращение с отходами в России</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В России ежегодно образуется около 70 млн тонн отходов, из которых 96%
+								отправляются на полигоны.</li>
+							<li class="news-popup__item">Сжигание отходов составляет 2%, а переработка — 4-7%.</li>
+							<li class="news-popup__item">В стране отсутствует раздельный сбор мусора, что затрудняет переработку.
+							</li>
+						</ul>
+						<p class="news-popup__text">Методы утилизации отходов</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В России используются различные методы утилизации отходов, включая
+								захоронение, сжигание и переработку.</li>
+							<li class="news-popup__item">Складирование на полигонах неэффективно с точки зрения экологии, но
+								широко распространено.</li>
+							<li class="news-popup__item">Мусоросжигание сопровождается выделением вредных веществ, требует
+								строгого контроля.</li>
+							<li class="news-popup__item">Комплексная сортировка и биотермическое компостирование являются
+								перспективными методами.</li>
+						</ul>
+						<p class="news-popup__text">Проблемы и перспективы утилизации</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В России не хватает инфраструктуры для раздельного сбора и переработки
+								отходов.</li>
+							<li class="news-popup__item">Проекты по сокращению пищевых отходов, такие как фудшеринг, набирают
+								популярность.</li>
+							<li class="news-popup__item">В Европе и США предпочтение отдается переработке, в то время как в Южной
+								Америке и Азии мусор часто сжигается.</li>
+						</ul>
+						<p class="news-popup__text">Законодательство и ответственность</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">ФЗ «Об отходах производства и потребления» регулирует обращение с
+								отходами.</li>
+							<li class="news-popup__item">Существуют конкретные правила и санкции за нарушение правил утилизации.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="news_3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<div class="popup__news news-popup news-popup_3">
+						<h3 class="news-popup__title">В России появится система «Экомониторинг» для наблюдения за состоянием
+							окружающей среды</h3>
+						<p class="news-popup__text">Создание ФГИС «Экомониторинг»</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Новый инструмент для сбора и анализа данных о состоянии природы</li>
+							<li class="news-popup__item">Доступ к информации для разных групп, включая власти и население</li>
+						</ul>
+						<p class="news-popup__text">Функции и операторы системы</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Сбор данных о загрязнении воздуха, воды, почвы, парниковых газах,
+								состоянии ледников и пожарной опасности</li>
+							<li class="news-popup__item">Информация о серьезных угрозах будет передаваться в РСЧС</li>
+							<li class="news-popup__item">«Российский экологический оператор» станет оператором системы</li>
+						</ul>
+						<p class="news-popup__text">Обязательства участников</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Государственные и местные власти, а также бизнес должны размещать данные
+								в системе</li>
+							<li class="news-popup__item">Обязанность отчитываться о воздействии на окружающую среду</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="news_4" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><span></span></button>
+				<div class="popup__text">
+					<div class="popup__news news-popup news-popup_4">
+						<h3 class="news-popup__title">Классы опасности отходов в 2024 году</h3>
+						<p class="news-popup__text">Классификация отходов в России</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В России существует 5 классов опасности отходов, от 1-го (чрезвычайно
+								опасные) до 5-го (практически неопасные).</li>
+							<li class="news-popup__item">Отходы 1-4 классов требуют паспортизации и особого обращения, в то время
+								как отходы 5-го класса не требуют паспортизации.</li>
+						</ul>
+						<p class="news-popup__text">Правила обращения с отходами</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Отходы должны быть правильно классифицированы и храниться в соответствии
+								с их классом опасности.</li>
+							<li class="news-popup__item">Отходы производства и потребления имеют разные правила хранения и
+								утилизации.</li>
+						</ul>
+						<p class="news-popup__text">Ответственность за обращение с отходами</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Неправильное обращение с отходами может повлечь за собой дисциплинарную,
+								административную, уголовную или гражданско-правовую ответственность.</li>
+						</ul>
+						<p class="news-popup__text">Обучение сотрудников</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Сотрудники организаций должны проходить обучение по обращению с отходами
+								для предотвращения экологических проблем.</li>
+						</ul>
+						<p class="news-popup__text">Продажа отходов</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">Отходы, которые могут быть вторично использованы, могут быть проданы при
+								условии соответствия стандартам качества.
+							</li>
+						</ul>
+						<p class="news-popup__text">Контроль обращения с отходами</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В России обращение с отходами регулируется законодательством и
+								контролируется государственными и местными органами власти.
+							</li>
+						</ul>
+						<p class="news-popup__text">Источники информации</p>
+						<ul class="news-popup__list">
+							<li class="news-popup__item">В статье приведены ссылки на законодательные акты и официальные
+								интернет-ресурсы, которые предоставляют дополнительную информацию по теме классификации отходов.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20241007164021"></script>
+</body>
+
+</html>
